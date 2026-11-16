@@ -556,3 +556,38 @@ footer {
         transition: none !important;
     }
 }
+
+/* Professional learning: consistent hierarchy and direct evidence links. */
+.credentials { border-top: 1px solid #27243d; }
+.credentials .intro { margin-bottom: 12px; }
+.credentials h2 { margin-bottom: 18px; }
+.credentials-intro { max-width: 760px; color: #aeb8ca; }
+.credential-group { margin-top: 42px; }
+.credential-group-heading { margin-bottom: 20px; }
+.credential-group-heading h3 { font-size: 22px; }
+.credential-group-heading p, .group-description { color: #aeb8ca; font-size: 15px; }
+.credentials-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.credential-card { display: flex; flex-direction: column; padding: 26px; background: #151827; border: 1px solid #303448; border-radius: 12px; }
+.credential-type { color: #c4b5fd; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+.credential-card h4, .module-card h4 { font-size: 18px; line-height: 1.45; margin-bottom: 14px; }
+.credential-issuer { color: #e2e8f0; font-size: 14px; }
+.credential-date { color: #aeb8ca; font-size: 12px; margin-top: 3px; }
+.credential-description { color: #aeb8ca; font-size: 14px; margin: 18px 0 24px; }
+.credential-link { color: #ddd6fe; font-size: 14px; font-weight: 600; text-decoration: none; margin-top: auto; display: inline-block; padding: 8px 0; }
+.credential-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.career-learning { margin-top: 30px; border: 1px solid #303448; border-radius: 12px; padding: 24px; }
+.career-learning summary { cursor: pointer; font-size: 19px; font-weight: 600; }
+.career-learning summary span { display: inline-block; font-size: 12px; font-weight: 400; margin-left: 12px; }
+.career-learning summary:focus-visible { outline: 2px solid #c4b5fd; outline-offset: 6px; }
+.career-learning .group-description { margin: 15px 0 20px; }
+.module-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+.module-card { display: flex; align-items: center; gap: 20px; border-top: 1px solid #303448; padding: 24px 0; }
+.module-card img { width: 100px; height: 100px; border-radius: 8px; object-fit: contain; flex: none; }
+.module-card .credential-type { letter-spacing: .5px; margin-bottom: 8px; }
+.module-card h4 { margin-bottom: 8px; }
+.image-glow { height: 390px; width: 330px; border-radius: 22px; background: #27243d; padding: 1px; box-shadow: 0 18px 45px #0004; }
+.image-glow img { border-radius: 21px; border: 0; object-position: center; }
+@media (max-width: 1100px) { nav { gap: 20px; flex-wrap: wrap; } .nav-links { gap: 14px 20px; } }
+@media (max-width: 1000px) { .credentials-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .image-glow { width: 270px; height: 320px; } }
+@media (max-width: 700px) { .credentials-grid, .module-grid { grid-template-columns: 1fr; } .image-glow { width: 230px; height: 270px; } .career-learning { padding: 20px; } .credential-card { padding: 22px; } }
+@media (max-width: 380px) { .module-card { align-items: flex-start; gap: 14px; } .module-card img { width: 72px; height: 72px; } }
