@@ -585,9 +585,7 @@ footer {
 .module-card img { width: 100px; height: 100px; border-radius: 8px; object-fit: contain; flex: none; }
 .module-card .credential-type { letter-spacing: .5px; margin-bottom: 8px; }
 .module-card h4 { margin-bottom: 8px; }
-.image-glow { height: 390px; width: 330px; border-radius: 22px; background: #27243d; padding: 1px; box-shadow: 0 18px 45px #0004; }
-.image-glow img { border-radius: 21px; border: 0; object-position: center; }
 @media (max-width: 1100px) { nav { gap: 20px; flex-wrap: wrap; } .nav-links { gap: 14px 20px; } }
-@media (max-width: 1000px) { .credentials-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .image-glow { width: 270px; height: 320px; } }
-@media (max-width: 700px) { .credentials-grid, .module-grid { grid-template-columns: 1fr; } .image-glow { width: 230px; height: 270px; } .career-learning { padding: 20px; } .credential-card { padding: 22px; } }
+@media (max-width: 1000px) { .credentials-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 700px) { .credentials-grid, .module-grid { grid-template-columns: 1fr; } .career-learning { padding: 20px; } .credential-card { padding: 22px; } }
 @media (max-width: 380px) { .module-card { align-items: flex-start; gap: 14px; } .module-card img { width: 72px; height: 72px; } }
